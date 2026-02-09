@@ -1,7 +1,8 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Layout, Hero, Section, Callout } from "../components";
-import { githubBlobUrl } from "../lib/github";
+import { githubBlobUrl, githubRepoUrl } from "../lib/github";
+import { NPM_PACKAGE_URLS } from "../lib/links";
 
 const PlayerPage: React.FC<PageProps> = () => {
   return (
@@ -11,8 +12,9 @@ const PlayerPage: React.FC<PageProps> = () => {
         title="A canonical implementation of the VideoML runtime"
         subtitle="The reference player validates the spec by providing a portable runtime model for playback, inspection, and tooling."
         links={[
-          { label: "View page source", href: githubBlobUrl("apps/videoml-org/src/pages/player.tsx") },
-          { label: "View @videoml/player", href: githubBlobUrl("packages/videoml-player/src/index.ts") },
+          { label: "View page source", href: githubBlobUrl("site", "src/pages/player.tsx") },
+          { label: "GitHub repo", href: githubRepoUrl("player") },
+          { label: "NPM: @videoml/player", href: NPM_PACKAGE_URLS.player },
         ]}
       />
 
@@ -32,6 +34,14 @@ const PlayerPage: React.FC<PageProps> = () => {
           The player is published as <code>@videoml/player</code>, including a
           web component and runtime helpers for integrating VideoML on any page.
         </p>
+        <pre className="code-block">
+{`import { defineVmlPlayer } from "@videoml/player";
+
+defineVmlPlayer();
+
+// HTML
+// <vml-player src="/videos/intro.babulus.xml" auto-play></vml-player>`}
+        </pre>
         <Callout tone="info">
           See <a href="/docs/packages">packages</a> and{" "}
           <a href="/docs/standard">standard</a> for usage details.

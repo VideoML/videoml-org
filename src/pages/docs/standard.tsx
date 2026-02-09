@@ -1,7 +1,8 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Layout, Hero, Section, Callout } from "../../components";
-import { githubBlobUrl } from "../../lib/github";
+import { githubBlobUrl, githubRepoUrl } from "../../lib/github";
+import { NPM_PACKAGE_URLS } from "../../lib/links";
 
 const VmlStandardPage: React.FC<PageProps> = () => {
   return (
@@ -11,9 +12,11 @@ const VmlStandardPage: React.FC<PageProps> = () => {
         title="VideoML Language Standard"
         subtitle="Declarative XML for time-based scenes, cues, and media. Draft v0.1."
         links={[
-          { label: "View page source", href: githubBlobUrl("apps/videoml-org/src/pages/docs/standard.tsx") },
-          { label: "View parser (xml.ts)", href: githubBlobUrl("packages/videoml-player/src/xml.ts") },
-          { label: "View web component", href: githubBlobUrl("packages/videoml-player/src/web-component.ts") },
+          { label: "View page source", href: githubBlobUrl("site", "src/pages/docs/standard.tsx") },
+          { label: "GitHub repo", href: githubRepoUrl("player") },
+          { label: "NPM: @videoml/player", href: NPM_PACKAGE_URLS.player },
+          { label: "View parser (xml.ts)", href: githubBlobUrl("player", "src/xml.ts") },
+          { label: "View web component", href: githubBlobUrl("player", "src/web-component.ts") },
         ]}
       />
 

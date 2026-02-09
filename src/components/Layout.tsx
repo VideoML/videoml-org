@@ -10,6 +10,7 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import "../styles/global.css";
+import { NPM_ORG_URL } from "../lib/links";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -83,9 +84,17 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             VideoML is a draft standard for declarative video composition. This
             site is a work in progress.
           </p>
+          <p className="meta-links">
+            <a href="https://github.com/VideoML" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            {" · "}
+            <a href={NPM_ORG_URL} target="_blank" rel="noreferrer">
+              NPM
+            </a>
+          </p>
         </div>
       </footer>
     </>
   );
 };
-

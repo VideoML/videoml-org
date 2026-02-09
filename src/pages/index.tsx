@@ -1,6 +1,7 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Layout, Hero, Section, Callout } from "../components";
+import { NPM_PACKAGE_URLS } from "../lib/links";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -66,7 +67,13 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
           <Callout tone="info">
             <strong>Next step:</strong> We are drafting the core spec and
-            preparing the reference player as a standalone NPM module.
+            shipping reference implementations you can embed today. Start with{" "}
+            <a href="/docs">docs</a>, browse <a href="/docs/packages">packages</a>
+            , or install{" "}
+            <a href={NPM_PACKAGE_URLS.player} target="_blank" rel="noreferrer">
+              @videoml/player
+            </a>
+            .
           </Callout>
         </div>
       </Section>

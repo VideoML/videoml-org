@@ -1,7 +1,8 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Layout, Hero, Section, Callout } from "../../components";
-import { githubBlobUrl } from "../../lib/github";
+import { githubBlobUrl, githubRepoUrl } from "../../lib/github";
+import { NPM_PACKAGE_URLS } from "../../lib/links";
 
 const CliPage: React.FC<PageProps> = () => {
   return (
@@ -11,8 +12,9 @@ const CliPage: React.FC<PageProps> = () => {
         title="vml Command Line"
         subtitle="Generate assets, render frames, and encode MP4s from VideoML."
         links={[
-          { label: "View page source", href: githubBlobUrl("apps/videoml-org/src/pages/docs/cli.tsx") },
-          { label: "View CLI implementation", href: githubBlobUrl("packages/videoml-cli/src/cli.ts") },
+          { label: "View page source", href: githubBlobUrl("site", "src/pages/docs/cli.tsx") },
+          { label: "GitHub repo", href: githubRepoUrl("cli") },
+          { label: "NPM: @videoml/cli", href: NPM_PACKAGE_URLS.cli },
         ]}
       />
 

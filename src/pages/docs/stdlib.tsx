@@ -1,7 +1,8 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Layout, Hero, Section, Callout } from "../../components";
-import { githubBlobUrl } from "../../lib/github";
+import { githubBlobUrl, githubRepoUrl } from "../../lib/github";
+import { NPM_PACKAGE_URLS } from "../../lib/links";
 
 const StdlibPage: React.FC<PageProps> = () => {
   return (
@@ -11,9 +12,10 @@ const StdlibPage: React.FC<PageProps> = () => {
         title="Layouts, Typography, Colors, Components"
         subtitle="Composable building blocks for on-brand VideoML scenes."
         links={[
-          { label: "View page source", href: githubBlobUrl("apps/videoml-org/src/pages/docs/stdlib.tsx") },
-          { label: "View stdlib components", href: githubBlobUrl("packages/videoml-stdlib/src/dom/components.ts") },
-          { label: "View token sets", href: githubBlobUrl("packages/videoml-stdlib/src/tokens/index.ts") },
+          { label: "View page source", href: githubBlobUrl("site", "src/pages/docs/stdlib.tsx") },
+          { label: "GitHub repo", href: githubRepoUrl("stdlib") },
+          { label: "NPM: @videoml/stdlib", href: NPM_PACKAGE_URLS.stdlib },
+          { label: "View DOM components", href: githubBlobUrl("stdlib", "src/dom/components.ts") },
         ]}
       />
 

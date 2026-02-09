@@ -1,7 +1,8 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Layout, Hero, Section } from "../../components";
-import { githubBlobUrl, githubTreeUrl } from "../../lib/github";
+import { githubBlobUrl, githubRepoUrl } from "../../lib/github";
+import { NPM_PACKAGE_URLS } from "../../lib/links";
 
 const PackagesPage: React.FC<PageProps> = () => {
   return (
@@ -11,20 +12,29 @@ const PackagesPage: React.FC<PageProps> = () => {
         title="VideoML NPM Modules"
         subtitle="Reference implementations published as composable packages."
         links={[
-          { label: "View page source", href: githubBlobUrl("apps/videoml-org/src/pages/docs/packages.tsx") },
-          { label: "Browse /packages", href: githubTreeUrl("packages") },
+          { label: "View page source", href: githubBlobUrl("site", "src/pages/docs/packages.tsx") },
         ]}
       />
 
       <Section>
         <h2 id="videoml-player">@videoml/player</h2>
         <p className="meta-links">
+          NPM:{" "}
+          <a href={NPM_PACKAGE_URLS.player} target="_blank" rel="noreferrer">
+            @videoml/player
+          </a>
+          {" · "}
+          GitHub:{" "}
+          <a href={githubRepoUrl("player")} target="_blank" rel="noreferrer">
+            VideoML/player
+          </a>
+          {" · "}
           Source:{" "}
-          <a href={githubBlobUrl("packages/videoml-player/src/web-component.ts")} target="_blank" rel="noreferrer">
+          <a href={githubBlobUrl("player", "src/web-component.ts")} target="_blank" rel="noreferrer">
             web-component.ts
           </a>
           {" · "}
-          <a href={githubBlobUrl("packages/videoml-player/src/runtime.ts")} target="_blank" rel="noreferrer">
+          <a href={githubBlobUrl("player", "src/runtime.ts")} target="_blank" rel="noreferrer">
             runtime.ts
           </a>
         </p>
@@ -45,12 +55,22 @@ defineVmlPlayer();
       <Section tone="alt">
         <h2 id="videoml-stdlib">@videoml/stdlib</h2>
         <p className="meta-links">
+          NPM:{" "}
+          <a href={NPM_PACKAGE_URLS.stdlib} target="_blank" rel="noreferrer">
+            @videoml/stdlib
+          </a>
+          {" · "}
+          GitHub:{" "}
+          <a href={githubRepoUrl("stdlib")} target="_blank" rel="noreferrer">
+            VideoML/stdlib
+          </a>
+          {" · "}
           Source:{" "}
-          <a href={githubBlobUrl("packages/videoml-stdlib/src/dom/components.ts")} target="_blank" rel="noreferrer">
+          <a href={githubBlobUrl("stdlib", "src/dom/components.ts")} target="_blank" rel="noreferrer">
             dom/components.ts
           </a>
           {" · "}
-          <a href={githubBlobUrl("packages/videoml-stdlib/src/tokens/index.ts")} target="_blank" rel="noreferrer">
+          <a href={githubBlobUrl("stdlib", "src/tokens/index.ts")} target="_blank" rel="noreferrer">
             tokens/index.ts
           </a>
         </p>
@@ -65,10 +85,53 @@ import { TitleSlideLayout } from "@videoml/stdlib/react";`}
       </Section>
 
       <Section>
+        <h2 id="videoml-toolchain">@videoml/toolchain</h2>
+        <p className="meta-links">
+          NPM:{" "}
+          <a href={NPM_PACKAGE_URLS.toolchain} target="_blank" rel="noreferrer">
+            @videoml/toolchain
+          </a>
+          {" · "}
+          GitHub:{" "}
+          <a href={githubRepoUrl("toolchain")} target="_blank" rel="noreferrer">
+            VideoML/toolchain
+          </a>
+          {" · "}
+          Source:{" "}
+          <a href={githubBlobUrl("toolchain", "src/generate.ts")} target="_blank" rel="noreferrer">
+            generate.ts
+          </a>
+          {" · "}
+          <a href={githubBlobUrl("toolchain", "src/index.ts")} target="_blank" rel="noreferrer">
+            index.ts
+          </a>
+        </p>
+        <p>
+          Core library for loading VML, generating timing/audio artifacts, and
+          rendering outputs. The <code>@videoml/cli</code> wraps this.
+        </p>
+        <pre className="code-block">
+{`import { generateComposition } from "@videoml/toolchain";
+
+const artifacts = await generateComposition("content/intro.babulus.xml");`}
+        </pre>
+      </Section>
+
+      <Section tone="alt">
         <h2 id="videoml-cli">@videoml/cli</h2>
         <p className="meta-links">
+          NPM:{" "}
+          <a href={NPM_PACKAGE_URLS.cli} target="_blank" rel="noreferrer">
+            @videoml/cli
+          </a>
+          {" · "}
+          GitHub:{" "}
+          <a href={githubRepoUrl("cli")} target="_blank" rel="noreferrer">
+            VideoML/cli
+          </a>
+          {" · "}
           Source:{" "}
-          <a href={githubBlobUrl("packages/videoml-cli/src/cli.ts")} target="_blank" rel="noreferrer">
+          <a href={githubBlobUrl("cli", "src/cli.ts")} target="_blank" rel="noreferrer">
             cli.ts
           </a>
         </p>

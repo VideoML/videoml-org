@@ -11,7 +11,7 @@ const DocsIndexPage: React.FC<PageProps> = () => {
         title="VideoML Standard, Libraries, and CLI"
         subtitle="The canonical docs for the VideoML language, the standard library, and the reference tooling."
         links={[
-          { label: "View this page source", href: githubBlobUrl("apps/videoml-org/src/pages/docs/index.tsx") },
+          { label: "View this page source", href: githubBlobUrl("site", "src/pages/docs/index.tsx") },
         ]}
       />
 
@@ -81,6 +81,10 @@ const DocsIndexPage: React.FC<PageProps> = () => {
           <a className="card alt" href="/docs/packages#videoml-stdlib">
             <h3>@videoml/stdlib</h3>
             <p>Design system primitives and reusable components.</p>
+          </a>
+          <a className="card" href="/docs/packages#videoml-toolchain">
+            <h3>@videoml/toolchain</h3>
+            <p>Core generator + renderer primitives used by the CLI.</p>
           </a>
           <a className="card" href="/docs/packages#videoml-cli">
             <h3>@videoml/cli</h3>

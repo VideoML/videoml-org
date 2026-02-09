@@ -1,12 +1,26 @@
-const GITHUB_REPO = "https://github.com/AnthusAI/Babulus";
+const GITHUB_ORG = "VideoML";
 
-export const githubBlobUrl = (path: string) => {
+export const VIDEO_ML_REPOS = {
+  site: "videoml-org",
+  specification: "specification",
+  player: "player",
+  stdlib: "stdlib",
+  toolchain: "toolchain",
+  cli: "cli",
+} as const;
+
+export type VideoMLRepoKey = keyof typeof VIDEO_ML_REPOS;
+
+const repoBaseUrl = (repo: VideoMLRepoKey) => `https://github.com/${GITHUB_ORG}/${VIDEO_ML_REPOS[repo]}`;
+
+export const githubRepoUrl = (repo: VideoMLRepoKey) => repoBaseUrl(repo);
+
+export const githubBlobUrl = (repo: VideoMLRepoKey, path: string) => {
   const clean = path.replace(/^\/+/, "");
-  return `${GITHUB_REPO}/blob/main/${clean}`;
+  return `${repoBaseUrl(repo)}/blob/main/${clean}`;
 };
 
-export const githubTreeUrl = (path: string) => {
+export const githubTreeUrl = (repo: VideoMLRepoKey, path = "") => {
   const clean = path.replace(/^\/+/, "");
-  return `${GITHUB_REPO}/tree/main/${clean}`;
+  return clean ? `${repoBaseUrl(repo)}/tree/main/${clean}` : `${repoBaseUrl(repo)}/tree/main`;
 };
-

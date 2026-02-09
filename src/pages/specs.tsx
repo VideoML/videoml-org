@@ -1,6 +1,7 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Layout, Hero, Section, Callout } from "../components";
+import { githubRepoUrl } from "../lib/github";
 
 const SpecsPage: React.FC<PageProps> = () => {
   return (
@@ -12,6 +13,13 @@ const SpecsPage: React.FC<PageProps> = () => {
       />
 
       <Section>
+        <Callout tone="info">
+          RFCs and draft specs live in{" "}
+          <a href={githubRepoUrl("specification")} target="_blank" rel="noreferrer">
+            VideoML/specification
+          </a>
+          .
+        </Callout>
         <h2>Core Concepts</h2>
         <ul>
           <li>Compositions, scenes, and cues</li>
