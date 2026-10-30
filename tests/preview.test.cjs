@@ -1,0 +1,3 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');
+const {previews}=require('../src/lib/preview.cjs');const {readCatalog}=require('../src/lib/catalog.cjs');
+test('every implemented effect has a shipped preview and matching schema controls',()=>{const entries=readCatalog().entries;for(const entry of entries.filter(e=>e.status==='implemented')){const spec=previews[entry.id];assert.ok(spec,entry.id);assert.match(spec.id,/^videoml\//);for(const key of spec.controls)assert.ok(entry.parameterSchema.properties[key],`${entry.id}: ${key}`);}for(const id of Object.keys(previews))assert.equal(entries.find(e=>e.id===id)?.status,'implemented');});
