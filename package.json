@@ -11,7 +11,7 @@
     "clean": "gatsby clean",
     "test:catalog": "node --test tests/catalog.test.cjs",
     "test:catalog:browser": "node --test tests/catalog-browser.cjs",
-    "test:preview": "node --test tests/preview.test.cjs tests/seek-pump.test.cjs",
+    "test:preview": "node --test tests/preview.test.cjs tests/seek-pump.test.cjs tests/catalog-xml.test.cjs",
     "build:preview": "node scripts/build-preview.cjs",
     "test:preview:browser": "node --test tests/preview-browser.cjs tests/preview-timeout-browser.cjs"
   },
