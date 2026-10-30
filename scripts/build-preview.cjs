@@ -1,0 +1,2 @@
+const webpack=require('webpack');const path=require('node:path');
+webpack({mode:'production',entry:path.resolve('src/preview-frame.ts'),output:{path:path.resolve('static/catalog-preview'),filename:'preview.js'},resolve:{extensions:['.ts','.js'],extensionAlias:{'.js':['.js','.ts']}},module:{rules:[{test:/\.ts$/,use:path.resolve('scripts/ts-loader.cjs')}]},optimization:{minimize:true}},(error,stats)=>{if(error||stats.hasErrors()){console.error(error||stats.toString({all:false,errors:true}));process.exitCode=1;}else console.log(stats.toString({all:false,assets:true}));});

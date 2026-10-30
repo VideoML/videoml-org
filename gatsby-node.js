@@ -9,3 +9,7 @@ exports.createPages = async ({actions}) => {
   actions.createPage({path:`/catalog/${entry.id}/`,component:path.resolve('./src/templates/catalog-entry.tsx'),context:{entry}});
  }
 };
+// Frozen stdlib ships TypeScript sources with Node-style .js specifiers.
+exports.onCreateWebpackConfig = ({actions}) => {
+ actions.setWebpackConfig({resolve:{extensionAlias:{'.js':['.js','.ts','.tsx']}}});
+};
