@@ -31,6 +31,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           <nav className="hidden items-center gap-4 text-sm font-semibold text-[var(--text-primary)] md:flex">
             <Link to="/specs">Spec</Link>
             <Link to="/player">Player</Link>
+            <Link to="/catalog/">Catalog</Link>
             <Link to="/docs">Docs</Link>
           </nav>
           <Sheet>
@@ -68,6 +69,9 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </SheetClose>
                 <SheetClose asChild>
                   <Link to="/player">Player</Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link to="/catalog/">Catalog</Link>
                 </SheetClose>
                 <SheetClose asChild>
                   <Link to="/docs">Docs</Link>

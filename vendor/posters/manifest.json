@@ -1,0 +1,23 @@
+{
+  "component/particle-text-dissolve": {
+    "file": "/catalog-posters/particle-text-dissolve.webp",
+    "sourceArtifact": "/private/tmp/videoml-execution/artifacts/p09-final2/particle-text-dissolve-out/frame-42.png",
+    "sourceSha256": "ec1bd1f31b79be467ef54cbbf1a966bcbaf7178899bc00f84b4463e3276c8406",
+    "posterSha256": "495dea47a6585c89f238e46080dd7250890f5a1bf4ef3958ae6deef9b75ae09c",
+    "provenance": "VideoML owned local fixture; accepted local smoke, not release verified"
+  },
+  "component/particle-image-reveal": {
+    "file": "/catalog-posters/particle-image-reveal.webp",
+    "sourceArtifact": "/private/tmp/videoml-execution/artifacts/p09-final2/particle-image-reveal-ltr/frame-42.png",
+    "sourceSha256": "4a7568f81c31ba6766d03ce30c87d0932a42f9a64c89bf1c024e13676bf265c7",
+    "posterSha256": "cead13b8847c361fcacf334931f3ea683a41224b9d9d16dadc57a3ae6114b95d",
+    "provenance": "VideoML owned local fixture; accepted local smoke, not release verified"
+  },
+  "component/echo-smear": {
+    "file": "/catalog-posters/echo-smear.webp",
+    "sourceArtifact": "/private/tmp/videoml-execution/artifacts/p10-dom-fenced/dom-frame-19.png",
+    "sourceSha256": "c423eef383a73b8be70a4a621a20b8f1aad7879b71bd08f49b2c4dc6a98907b5",
+    "posterSha256": "bf678acaa77c0b0787d29c15eca8ba0c6d3babccc8d0546a6e267725e1562df2",
+    "provenance": "VideoML owned local fixture; accepted local smoke, not release verified"
+  }
+}
