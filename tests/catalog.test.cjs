@@ -2,7 +2,7 @@ const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const {readCatalog,filterEntries,frameworksFor}=require('../src/lib/catalog.cjs');
 test('manifest routes are unique and filters match text, category and framework',()=>{
- const catalog=readCatalog(); assert.equal(catalog.entries.length,469);assert.equal(new Set(catalog.entries.map(e=>e.id)).size,469);
+ const catalog=readCatalog(); assert.equal(catalog.entries.length,470);assert.equal(new Set(catalog.entries.map(e=>e.id)).size,470);
  const example={title:'Motion',description:'Blue waves',name:'motion',category:'component',tags:['gsap','water'],dependencies:{declared:{}}};
  assert.deepEqual(frameworksFor(example),['gsap']);assert.equal(filterEntries([example],{q:'blue',category:'component',framework:'gsap'}).length,1);assert.equal(filterEntries([example],{q:'water',framework:'react'}).length,0);
 });

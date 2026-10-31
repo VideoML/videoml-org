@@ -2,6 +2,11 @@
   "package": "@videoml/stdlib",
   "version": "0.0.0",
   "sourceRepository": "https://github.com/VideoML/stdlib",
-  "sourceRevision": "b68e103408e39642ca0ce98a35379d52319d040b",
-  "sha256": "4e19b9c8b09c565388f734b7495dd3f47a9cd2925f1f0b99cccad51c58df39e5"
+  "sourceRevision": "ad73452523b822fa96dd92202dcc829ae728f2e3",
+  "sha256": "eb88291569386eae798dd0dc207256950ac84f60a41744a13f9007c9aea57379",
+  "gsap": {
+    "version": "3.15.0",
+    "source": "P08 toolchain installed package",
+    "sha256": "246461335af859404949756fa5b3e47d30c1cb4130a0f3100913905db3a87323"
+  }
 }

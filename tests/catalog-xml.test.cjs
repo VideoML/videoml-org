@@ -8,8 +8,8 @@ test('each shipped preview produces matching XML and local asset declarations', 
     const xml = catalogXml(spec, spec.defaults);
     assert.match(xml, /<vml id="catalog-example" width="1280" height="720" fps="30" duration="4s">/);
     assert.match(xml, /<voiceover seed="0"\/>/);
-    assert.ok(xml.includes(`effect-id="${spec.id}" effect-version="1"`));
-    assert.ok(xml.includes('start="0s" duration="4s"'));
+    if(spec.kind==='shader') {assert.ok(xml.includes(`effect="${spec.id}" start="2s" duration="1s"`));assert.match(xml,/effect-id="videoml\/echo-smear"/);assert.match(xml,/effect-id="videoml\/particle-text-dissolve"/);}
+    else {assert.ok(xml.includes(`effect-id="${spec.id}" effect-version="1"`));assert.ok(xml.includes('start="0s" duration="4s"'));}
     if (spec.asset === 'font') assert.match(xml, /id="font" src="assets\/Geist-Latin\.woff2" media-type="font\/woff2"/);
     else if (spec.asset === 'image') assert.match(xml, /id="image" src="assets\/neutral-image\.svg" media-type="image\/svg\+xml"/);
     else assert.doesNotMatch(xml, /<assets>/);

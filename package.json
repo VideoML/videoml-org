@@ -6,12 +6,12 @@
   "scripts": {
     "develop": "npm run build:preview && gatsby develop",
     "dev": "npm run develop",
-    "build": "npm run build:preview && gatsby build",
+    "build": "npm run build:preview && gatsby clean && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test:catalog": "node --test tests/catalog.test.cjs",
+    "test:catalog": "node --test tests/catalog.test.cjs tests/vendor-lock.test.cjs",
     "test:catalog:browser": "node --test tests/catalog-browser.cjs",
-    "test:preview": "node --test tests/preview.test.cjs tests/seek-pump.test.cjs tests/catalog-xml.test.cjs",
+    "test:preview": "node --test tests/preview.test.cjs tests/seek-pump.test.cjs tests/catalog-xml.test.cjs tests/shader-source.test.cjs",
     "build:preview": "node scripts/build-preview.cjs",
     "test:preview:browser": "node --test tests/preview-browser.cjs tests/preview-timeout-browser.cjs"
   },
@@ -30,7 +30,8 @@
     "react-dom": "^18.3.1",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
-    "@videoml/stdlib": "file:vendor/videoml/videoml-stdlib-0.0.0.tgz"
+    "@videoml/stdlib": "file:vendor/videoml/videoml-stdlib-0.0.0.tgz",
+    "gsap": "file:vendor/videoml/gsap-3.15.0.tgz"
   },
   "devDependencies": {
     "@types/react": "^18.3.0",

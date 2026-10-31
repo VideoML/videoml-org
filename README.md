@@ -260,3 +260,11 @@ No CSS frameworks, no CSS-in-JS libraries, no UI component libraries. Everything
 For questions about the design system, see `DESIGN_SYSTEM.md`.
 For code snippets, see `QUICK_REFERENCE.md`.
 For complete handoff info, see `DESIGN_HANDOFF.md`.
+
+### Shader catalog previews
+
+Shader detail pages use the frozen stdlib compositor with two owned native effect sources. Each source is advanced to the requested composition frame; the preview loads only the selected effect and releases its canvases and font URL on teardown. Download the linked Geist font beside the copied XML in `assets/` before running it with VideoML. The copied TypeScript requires the standard GSAP named-easing package as well as stdlib.
+
+An arbitrary DOM scene needs a trusted scene capture provider in the browser. The general local renderer can pre-render scene frames and use them as compositor inputs; a player without a capture provider reports `SCENE_CAPTURE_UNAVAILABLE`. Local catalog smoke checks do not imply Linux release verification.
+
+The production build runs `gatsby clean` before compiling. Frozen stdlib archives retain the same package version when the catalog is refreshed, and clearing Gatsby's generated cache prevents the client bundle from retaining an earlier manifest.
