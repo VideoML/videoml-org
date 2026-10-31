@@ -19,5 +19,103 @@
     "sourceSha256": "c423eef383a73b8be70a4a621a20b8f1aad7879b71bd08f49b2c4dc6a98907b5",
     "posterSha256": "bf678acaa77c0b0787d29c15eca8ba0c6d3babccc8d0546a6e267725e1562df2",
     "provenance": "VideoML owned local fixture; accepted local smoke, not release verified"
+  },
+  "shader/chromatic-split": {
+    "file": "/catalog-posters/shader-chromatic-split.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/chromatic-split/preview-75.png",
+    "sourceSha256": "64acd42d9a7a96e1e1b4541ca98990b2d1ec6ad0b34bb1bd3583b7edc5c24d76",
+    "posterSha256": "98f677c02eabba9907a7e1d20d48402e2f81acb41bd450ec1add928f2a54cb96",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/cinematic-zoom": {
+    "file": "/catalog-posters/shader-cinematic-zoom.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/cinematic-zoom/preview-75.png",
+    "sourceSha256": "37616b0e7cd89e3a353d680a1e0de2687f0b77a9745e8b72edcbad7c7638ca06",
+    "posterSha256": "e18d5babfdf58588090e566a44c64220d4d680021c8b4bdd97625c80581b7623",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/cross-warp-morph": {
+    "file": "/catalog-posters/shader-cross-warp-morph.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/cross-warp-morph/preview-75.png",
+    "sourceSha256": "48641b0a80efa86d4b30d76a80187775b4bb21b571defe05664b16d3feef97da",
+    "posterSha256": "432f1abe1493acd0b88e6156f3f3bdeee7304063b809b43d5f7423f9faae6334",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/domain-warp": {
+    "file": "/catalog-posters/shader-domain-warp.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/domain-warp/preview-75.png",
+    "sourceSha256": "a3ae640b85fab0aa672206453be64e0ceabf846cf0b20fc237d15be77820d6b2",
+    "posterSha256": "59e86e00172537c66b2c7f564eb5e40d9030efd897cf076a7d28b9bbac249f2f",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/flash-through-white": {
+    "file": "/catalog-posters/shader-flash-through-white.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/flash-through-white/preview-75.png",
+    "sourceSha256": "b17e29da3242ceda0ca3273bfb652023e7b151fc0b97b5b7c1997f50abf2efe5",
+    "posterSha256": "ece33c5c3552e45e177dcecf9b7da2c20aed2236fc0ca6cc9304b38cc9a88ddf",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/glitch": {
+    "file": "/catalog-posters/shader-glitch.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/glitch/preview-75.png",
+    "sourceSha256": "b953ca4c87f896aa8e1722494fc61fde5793385175347375c54f5d8f2d588e9b",
+    "posterSha256": "3a625095960c00c91f1d4d37d668aaff59835b3009d1d1e744e362fe34031293",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/gravitational-lens": {
+    "file": "/catalog-posters/shader-gravitational-lens.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/gravitational-lens/preview-75.png",
+    "sourceSha256": "22b75e01b6dc83a3a4e924a56f2144bb66ebc5382118abe09ad3c30795849f48",
+    "posterSha256": "053f4dc7348938ffbb0eb2ccfa53f6551cd78be832b2840bc41e24d33c031d98",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/light-leak": {
+    "file": "/catalog-posters/shader-light-leak.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/light-leak/preview-75.png",
+    "sourceSha256": "b84336ba1e51b4b66e07c10cd300625c173c4ffc9c128bfcb2c2a03055a180e3",
+    "posterSha256": "82979abf46ef33ed1596687aae3c010603a70d25581ba1a6b102fc5598f7e749",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/ridged-burn": {
+    "file": "/catalog-posters/shader-ridged-burn.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/ridged-burn/preview-75.png",
+    "sourceSha256": "74fa711639fca41ba1c93d26036615a970f7b9b6b1990e26ef01ac7def9dc32a",
+    "posterSha256": "f6ff92de5bf60fe97b6448339ca274641de21c33cf6b51936c04ba7082f8d6a5",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/ripple-waves": {
+    "file": "/catalog-posters/shader-ripple-waves.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/ripple-waves/preview-75.png",
+    "sourceSha256": "b23fa822c0cbad020cb4441d4d06b50a32afe0109cd8e4a9701172c097e218de",
+    "posterSha256": "52d71e550b10510b0b918ffe205a08de7639ada055fa5ce65374020dc4d51b30",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/sdf-iris": {
+    "file": "/catalog-posters/shader-sdf-iris.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/sdf-iris/preview-75.png",
+    "sourceSha256": "f34d45132614ab4e70af9020b6aa700a121a16a3e5409f329c07d25b5d701b8a",
+    "posterSha256": "56c69ce7a3df8a65338b66f558884d6011eea7fa398271e4524f79f60524815d",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/swirl-vortex": {
+    "file": "/catalog-posters/shader-swirl-vortex.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/swirl-vortex/preview-75.png",
+    "sourceSha256": "1d6cec382f91bb8b368073d569e2df037ef0645b0ed80fe05709e2327e2481af",
+    "posterSha256": "6f52b6ec79ac10c4a22373ea44756918c2231e5ad9a605a7c0da3a379973b98a",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/thermal-distortion": {
+    "file": "/catalog-posters/shader-thermal-distortion.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/thermal-distortion/preview-75.png",
+    "sourceSha256": "508583466104cc6c69592e7a35e29c078bdf713595efaba1932d1f3fe6530385",
+    "posterSha256": "4fe8f1a84c02b658d95f63ea6ea171308f6f155ce33ab12b16dd89ce86aaa41c",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
+  },
+  "shader/whip-pan": {
+    "file": "/catalog-posters/shader-whip-pan.webp",
+    "sourceArtifact": "/private/tmp/videoml-p08a/cases/whip-pan/preview-75.png",
+    "sourceSha256": "8cd1c543f4edd00efc535285fc9266f58251876df0dfa0721af1e0c9a9620a04",
+    "posterSha256": "e303121d9515cdf613a643f91c4bdae08e4d5761030e34d598bf26a9df6832a3",
+    "provenance": "VideoML owned native-effect fixture; local macOS smoke, release verification pending"
   }
 }
