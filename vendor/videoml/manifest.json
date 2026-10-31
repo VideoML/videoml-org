@@ -2,8 +2,8 @@
   "package": "@videoml/stdlib",
   "version": "0.0.0",
   "sourceRepository": "https://github.com/VideoML/stdlib",
-  "sourceRevision": "ad73452523b822fa96dd92202dcc829ae728f2e3",
-  "sha256": "eb88291569386eae798dd0dc207256950ac84f60a41744a13f9007c9aea57379",
+  "sourceRevision": "56ac583cc0cc4927004d2ec74e5a70b614d26b0b",
+  "sha256": "1ca1bded3c5578522008cb3e71cbd4896e14fd2b41410abfa3912a2520212b91",
   "gsap": {
     "version": "3.15.0",
     "source": "P08 toolchain installed package",
